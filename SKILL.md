@@ -68,10 +68,11 @@ Use the confirmed personal photo / character reference to create or load the per
 Character package should include:
 - character identity summary
 - clean single-character reference
-- optional turnarounds / supporting views
+- a required turnaround showing the full character from the front, back, left profile, and right profile
 - character consistency notes
 
 The character must be rendered in the confirmed custom style.
+Present all four views for user confirmation before using a newly created character in article illustrations. Keep identity, outfit, proportions, and distinctive details consistent across views. Verify that both profiles are present and face opposite directions. If a saved character package is missing any view, generate the missing views before treating the package as complete.
 
 ### Step 4 — analyze article
 Analyze the article using the **original article logic**.

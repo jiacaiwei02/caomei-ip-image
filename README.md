@@ -29,6 +29,10 @@ The following parts must remain aligned with the original skill logic:
 > Change only **how to draw**.
 > Do not change **how many to draw**, **what to draw**, **how to structure the picture**, or **how to deliver it**.
 
+## Character turnaround
+
+When creating a new character from photos or references, the skill delivers front, back, left-profile, and right-profile views for confirmation, along with a clean single-character reference image.
+
 ## Core files
 - `SKILL.md` — master workflow
 - `references/style-system.md` — custom style rules

@@ -7,7 +7,8 @@ Maintain a consistent personal IP across all generated article illustrations.
 A usable character package should contain:
 - character identity summary
 - clean single-character reference image
-- optional multi-view support images
+- a required turnaround with four full-character views: front, back, left profile, and right profile.
+  Use the same neutral pose, scale, outfit, and confirmed style throughout. Preserve asymmetric details on the correct side.
 - optional expression / pose support sheet
 - character spec notes
 
