@@ -1,6 +1,6 @@
 # Caomei IP image
 
-A custom-style adaptation of the Punk-IP article illustration workflow.
+Caomei IP image references and adapts the article-illustration workflow from the original [Punk IP Article Illustrations Skill](https://github.com/adrianpunk/Punk-IP) by Adrian Punk.
 
 ## Purpose
 Caomei IP image is a skill specification for generating article illustrations with:
