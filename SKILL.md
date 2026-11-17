@@ -48,7 +48,7 @@ produce article illustrations that:
 
 1. At first use, guide the user to define a style and create a personal IP if none exists.
 2. After generating the initial character package, ask for confirmation before finalizing it.
-3. After character confirmation, invite the user to provide an article if no article was supplied.
+3. After character confirmation, if no article was supplied, ask the user to paste the article text or upload the article. Use platform-neutral wording in all user-facing prompts and delivery messages unless the user explicitly specifies a platform. Do not infer a publishing platform from the illustration style, character, article topic, or examples. If the user has already supplied an article, proceed with it.
 4. After article analysis, briefly announce the illustration plan and continue automatically.
 5. After generating illustrations, continue to the originally requested delivery step.
 6. After delivery, invite the user to process another article with the same saved assets.
