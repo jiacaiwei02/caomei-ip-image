@@ -5,6 +5,17 @@ description: Generate article illustrations using a consistent personal characte
 
 # Caomei IP image
 
+## Automatic updates
+
+On each explicit invocation, check for an update before starting character or article work if this skill is installed as its own Git checkout and the user opted into automatic updates when installing it.
+
+- Confirm that the checkout root is this skill folder, the current branch is main, and origin is https://github.com/jiacaiwei02/caomei-ip-image.git (the same URL without .git is also accepted).
+- Check git status --porcelain. If it returns any entries, use the installed version and preserve local files.
+- In a clean checkout, run git pull --ff-only origin main. Do not reset, stash, force-update, or change the remote.
+- After a successful pull, reload SKILL.md and the relevant references from disk before proceeding. Perform the update check only once per invocation.
+- If Git or network access is unavailable, the pull fails, or the repository has diverged, continue with the installed version. Do not request new access solely to check for updates.
+- Keep saved characters, source photos, style profiles, articles, and generated images outside this checkout. Never upload user assets during an update.
+
 ## Identity
 Caomei IP image is an article-illustration skill that uses a fixed personal IP character and a reusable custom illustration style to generate editorial insert images for articles.
 

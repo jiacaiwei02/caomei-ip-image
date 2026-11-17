@@ -33,6 +33,20 @@ The following parts must remain aligned with the original skill logic:
 
 When creating a new character from photos or references, the skill delivers front, back, left-profile, and right-profile views for confirmation, along with a clean single-character reference image.
 
+## Install with automatic updates in Codex
+
+Send this request to Codex:
+
+> Install or migrate my caomei-ip-image skill to a standalone Git checkout of https://github.com/jiacaiwei02/caomei-ip-image.git under ~/.agents/skills/caomei-ip-image. I opt in to checking for and applying fast-forward updates from the official main branch whenever I explicitly invoke the skill. Preserve my existing skill folder as a backup outside all scanned skill folders before replacing it. Keep my saved characters, style profiles, articles, photos, and output images outside the Git checkout, and retain their existing locations if they are already outside it. Store my opt-in in local agent instructions outside the checkout and confirm that Codex can recognize the installed skill.
+
+A fresh install can be cloned with:
+
+```sh
+git clone --branch main https://github.com/jiacaiwei02/caomei-ip-image.git ~/.agents/skills/caomei-ip-image
+```
+
+The clone command requires Git and an unused destination. Use the Codex request above to record your opt-in. Existing ZIP installations need the one-time migration above. Afterward, invoke the skill normally. Auto-update requires the agent to have Git, network access, and permission to write to the checkout. The agent can continue with the installed version when an update is unavailable.
+
 ## Core files
 - `SKILL.md` — master workflow
 - `references/style-system.md` — custom style rules
