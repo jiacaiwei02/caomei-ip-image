@@ -33,13 +33,23 @@ produce article illustrations that:
 
 ---
 
+## Interactive Guidance & Continuation
+
+1. At first use, guide the user to define a style and create a personal IP if none exists.
+2. After generating the initial character package, ask for confirmation before finalizing it.
+3. After character confirmation, invite the user to provide an article if no article was supplied.
+4. After article analysis, briefly announce the illustration plan and continue automatically.
+5. After generating illustrations, continue to the originally requested delivery step.
+6. After delivery, invite the user to process another article with the same saved assets.
+7. Never ask for information already provided.
+8. Never require repeated approval for routine steps.
+9. Ask questions only when an essential decision, missing input, or user approval requires it.
+10. Preserve all original illustration-count, scene-planning, composition, and delivery rules.
+
 ## Workflow
 
 ### Step 1 — gather inputs
-Required inputs:
-- article text
-- character reference asset(s)
-- custom style definition
+Use inputs already supplied and load saved assets when available. For a new style or character, gather the missing style definition and character references first. Article text is required when article analysis starts.
 
 Possible style inputs:
 - **custom-text-style**: user describes the desired style in words
@@ -75,6 +85,7 @@ The character must be rendered in the confirmed custom style.
 Present all four views for user confirmation before using a newly created character in article illustrations. Keep identity, outfit, proportions, and distinctive details consistent across views. Verify that both profiles are present and face opposite directions. If a saved character package is missing any view, generate the missing views before treating the package as complete.
 
 ### Step 4 — analyze article
+If no article was supplied, invite the user to provide it after the character is confirmed.
 Analyze the article using the **original article logic**.
 
 Do not change the original logic for:
@@ -133,6 +144,7 @@ Article illustrations must generate actions, gestures, and expressions primarily
 Do not limit the final scene to pre-existing poses.
 
 ### Step 9 — generate images
+Briefly announce the illustration plan, then proceed with generation without waiting for approval.
 Generate images **one by one**, not as a combined multi-panel infographic.
 
 Use:
@@ -173,6 +185,7 @@ For each illustration, report:
 
 If the source format supports insertion and insertion is requested, insert according to the original delivery logic.
 Otherwise provide insertion guidance.
+After delivery, invite the user to process another article using the same saved style and character.
 
 ---
 
